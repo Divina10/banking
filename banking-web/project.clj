@@ -8,6 +8,7 @@
                   [org.clojure/core.async "0.4.474"]
                   [garden "1.3.5"]
                   [secretary "1.2.3"]
+                  [cljs-ajax "0.5.8"]
                   [log4j "1.2.15" :exclusions [
                       [javax.mail/mail :extension "jar"]
                       [javax.jms/jms :classifier "*"] com.sun.jdmk/jmxtools com.sun.jmx/jmxri]
@@ -35,7 +36,7 @@
 
                           :figwheel { :on-jsload "banking-web.core/on-js-reload" }
 
-                          :compiler {:main gf-client.core
+                          :compiler {:main banking-web.core
                                     :asset-path "js/compiled/out"
                                     :output-to "resources/public/js/compiled/banking-web.js"
                                     :output-dir "resources/public/js/compiled/out"

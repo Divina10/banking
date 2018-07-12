@@ -1,5 +1,4 @@
   (ns ^:figwheel-always banking-web.core
-    (:gen-class)
     (:require
       [secretary.core :as secretary]
       [banking-web.pages :as pages]
